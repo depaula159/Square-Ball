@@ -26,11 +26,11 @@
       <div class="form-group">
         <!-- Arredondar bordas -->
         <label>Arredondamento das bordas:</label>
-        <input type="range" min="0" max="100" value="0" id="inRangeRadius" @mouseup="alterarBorderRadius()" />
+        <input type="range" min="0" max="100" value="0" id="inRangeRadius" @mouseup="alterarBorderRadius()" @touchend="alterarBorderRadius()" />
         <small id="helpId" class="text-muted">{{this.squareStyle.borderRadius}}</small>
         <!-- adicionar bordas -->
         <label>Adicionar bordas:</label>
-        <input type="range" min="0" max="20" value="0" id="inRangeBorder" @mouseup="adicionarBorder()" />
+        <input type="range" min="0" max="20" value="0" id="inRangeBorder" @mouseup="adicionarBorder()" @touchend="alterarBorderRadius()" />
         <small id="helpId" class="text-muted">{{this.squareStyle.border}}</small>
         <!-- mudar cor -->
         <label>Mudar cor:</label>
